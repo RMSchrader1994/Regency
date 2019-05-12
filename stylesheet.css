@@ -1,0 +1,41 @@
+body {
+    background-image: url(floral-1382723_1280.jpg);    
+}
+
+.container {
+    background-color: #8d8741;
+    height: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #bc986a;
+    font-family: 'Merienda', cursive;
+    font-size: 5em;
+}
+
+.navbar{
+    background-color: #659dbd;
+    border-color: #659dbd;
+    margin-top: 15px;
+}
+
+li a {
+    color: #bc986a;
+    font-size: 2em;
+}
+
+.carousel-inner img {
+  margin: auto;
+  width: 50%;
+}
+
+h2 {
+    text-align: center;
+    color: #bc986a;
+    font-family: 'Merienda', cursive;
+    font-size: 2em;
+}
+
+
