@@ -1,5 +1,5 @@
 body {
-    background-image: url(floral-1382723_1280.jpg);    
+    background-image: url(./Media/IMG/floral-1382723_1280.jpg);    
 }
 
 .container {
@@ -11,19 +11,33 @@ body {
 h1 {
     text-align: center;
     color: #bc986a;
-    font-family: 'Merienda', cursive;
+    font-family: 'Monsieur La Doulaise', cursive;
     font-size: 5em;
 }
 
+h2 {
+    text-align: center;
+    color: #bc986a;
+    font-family: 'Monsieur La Doulaise', cursive;
+    
+}
+
+h3 {
+    text-align: center;
+    color: #bc986a;
+    font-family: 'Monsieur La Doulaise', cursive; 
+}
 .navbar{
-    background-color: #659dbd;
-    border-color: #659dbd;
+    background-color: #ECEC0A;
+    border-color: #ECEC0A;
     margin-top: 15px;
+    
 }
 
 li a {
-    color: #bc986a;
     font-size: 2em;
+     font-family: 'Monsieur La Doulaise', cursive;
+    color: #000000;
 }
 
 .carousel-inner img {
@@ -31,11 +45,8 @@ li a {
   width: 50%;
 }
 
-h2 {
-    text-align: center;
-    color: #bc986a;
-    font-family: 'Merienda', cursive;
-    font-size: 2em;
+.imp {
+    text-decoration: underline;
 }
 
 
