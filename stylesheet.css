@@ -77,6 +77,15 @@ p {
     padding: 5px;
     text-align: center;
 }
+.dress-long {
+    width: 17%;
+    position: relative;
+    float: right;
+}
+.dress-wide{
+    width: 51%;
+    float: right;
+}
 
 @media only screen and (max-width: 700px) {
   #Fit4 {
