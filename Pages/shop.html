@@ -11,7 +11,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
-     <script type="text/javascript" src="../jquery.lazy-master/jquery.lazy.min.js"></script>
 
 </head>
 <body>
@@ -49,21 +48,26 @@
 
         <div class="row">
             <div class="col-sm-12">
-               <img src="../Media/IMG/AE21/IMG_2959%20copy.JPG" alt="AE21.1" class="dress-long">
-                <img src="../Media/IMG/AE21/IMG_2956%20copy.JPG" alt="AE21.2" class="dress-long">
-                <img src="../Media/IMG/AE21/IMG_2957%20copy.JPG" alt="AE21.3" class="dress-long">
-                <img src="../Media/IMG/AE21/IMG_2955%20copy.jpg" alt="AE21.4" class="dress-wide">
+               <img src="../Media/IMG/AE21/IMG_2959%20copy.JPG" alt="AE21 Front" class="dress-long myImages">
+                <img src="../Media/IMG/AE21/IMG_2956%20copy.JPG" alt="AE21 Back" class="dress-long myImages">
+                <img src="../Media/IMG/AE21/IMG_2957%20copy.JPG" alt="AE21 Side" class="dress-long myImages">
+                <img src="../Media/IMG/AE21/IMG_2955%20copy.jpg" alt="AE21 Wide" class="dress-wide myImages">
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-sm-12">
-               <img src="../Media/IMG/EW22/IMG_2931%20copy.JPG" alt="EW22.1" class="dress-long">
-                <img src="../Media/IMG/EW22/IMG_2930%20copy.JPG" alt="EW22.2" class="dress-long">
-                <img src="../Media/IMG/EW22/IMG_2929%20copy.JPG" alt="EW22.3" class="dress-long">
-                <img src="../Media/IMG/EW22/IMG_2934%20copy.JPG" alt="EW22.4" class="dress-wide">
+               <img src="../Media/IMG/EW22/IMG_2931%20copy.JPG" alt="EW22 Back" class="dress-long myImages">
+                <img src="../Media/IMG/EW22/IMG_2930%20copy.JPG" alt="EW22 Side" class="dress-long myImages">
+                <img src="../Media/IMG/EW22/IMG_2929%20copy.JPG" alt="EW22 Front" class="dress-long myImages">
+                <img src="../Media/IMG/EW22/IMG_2934%20copy.JPG" alt="EW22 Wide" class="dress-wide myImages">
             </div>
         </div>
+        <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
         <div class="row">
             <div class="col-sm-12">
                 <h2>Email: aurelia.de.lyall@gmail.com</h2>
@@ -71,9 +75,32 @@
         </div>
     </div>
 <script>
-$(function() {
-        $('.lazy').Lazy();
-    });    
+ // create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+} 
 </script>
 </body>
 </html>
