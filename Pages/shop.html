@@ -11,6 +11,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+     <script type="text/javascript" src="../jquery.lazy-master/jquery.lazy.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -56,10 +58,10 @@
         <hr>
         <div class="row">
             <div class="col-sm-12">
-               <img src="../Media/IMG/EW22/IMG_2931.JPG" alt="EW22.1" class="dress-long">
-                <img src="../Media/IMG/EW22/IMG_2930.JPG" alt="EW22.2" class="dress-long">
-                <img src="../Media/IMG/EW22/IMG_2929.JPG" alt="EW22.3" class="dress-long">
-                <img src="../Media/IMG/EW22/IMG_2934.JPG" alt="EW22.4" class="dress-wide">
+               <img src="../Media/IMG/EW22/IMG_2931.JPG" alt="EW22.1" class="dress-long lazy">
+                <img src="../Media/IMG/EW22/IMG_2930.JPG" alt="EW22.2" class="dress-long lazy">
+                <img src="../Media/IMG/EW22/IMG_2929.JPG" alt="EW22.3" class="dress-long lazy">
+                <img src="../Media/IMG/EW22/IMG_2934.JPG" alt="EW22.4" class="dress-wide lazy">
             </div>
         </div>
         <div class="row">
@@ -68,5 +70,10 @@
             </div>
         </div>
     </div>
+<script>
+$(function() {
+        $('.lazy').Lazy();
+    });    
+</script>
 </body>
 </html>
