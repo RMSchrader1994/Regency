@@ -79,30 +79,53 @@ p {
     text-align: center;
 }
 .dress-long {
-    width: 17%;
-    padding: 5px;
-    float: right;
+    width: 30.5%;
+    margin: 5px;
 }
 .dress-long:hover {
     opacity: 0.7;
 }
 .dress-wide{
-    width: 51%;
-    padding: 5px;
-    float: right;
+    width: 100%;
 }
 .dress-wide:hover {
     opacity: 0.7;
+}
+.fpr-wide{
+    width: 35%;
+    padding: 5px;
+    float: right;
+}
+.fpl-wide{
+    width: 35%;
+    padding: 5px;
+    float: left;
+}
+.fpl-wide:hover {
+  opacity: 0.7;
+}
+.fpr-wide:hover {
+  opacity: 0.7;
+}
+.fp-long{
+    width: 30%;
+    padding: 30px 5px;
+    float: right;
+    
+}
+.fp-long:hover {
+  opacity: 0.7;
+}
+.fp
+#FP21 {
+    max-width: 100%;
+    height: auto;
 }
 
 #myImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-#myImg:hover {
-  opacity: 0.7;
 }
 
 .modal {
@@ -179,6 +202,11 @@ p {
 }
 
 
+@media only screen and (max-width: 1000px) {
+    .dress-long {
+        width: 29%;
+    }
+}
 
 @media only screen and (max-width: 700px) {
   #Fit4 {
