@@ -13,24 +13,20 @@ body {
 h1 {
     text-align: center;
     color: white;
-    font-family: 'Tangerine', cursive;    
-    font-size: 5em;
+    font-family: 'Tangerine', cursive;  
+    font-size: 500%
 }
 
 h2 {
     text-align: center;
     color: white;
-    font-family: 'Tangerine', cursive;    
+    font-family: 'Tangerine', cursive; 
+    font-size: 250%
 }
 
-h3 {
-    text-align: center;
-    color: #bc986a;
-    font-family: 'Tangerine', cursive;
-}
 .navbar{
-    background-color: #54274f;
-    border-color: #54274f;
+    background-color: #452531;
+    border-color: #452531;
     margin-top: 15px;
     
 }
@@ -48,6 +44,7 @@ li a {
 
 .imp {
     text-decoration: underline;
+    font-size: 150%;
 }
 
 #Fit1 {
