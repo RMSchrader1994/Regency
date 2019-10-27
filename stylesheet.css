@@ -24,6 +24,10 @@ h2 {
     font-size: 250%
 }
 
+h3 {
+    text-align: center;
+}
+
 .navbar{
     background-color: #452531;
     border-color: #452531;
@@ -69,6 +73,10 @@ li a {
     float: right;
     width: 25%;
     margin: 5px;
+}
+#Hall {
+    float: right;
+    width: 25%;
 }
 p {
     font-size: 20px;
@@ -125,6 +133,17 @@ p {
   transition: 0.3s;
 }
 
+#loginForm {
+  width: 35%;
+  margin: 0 auto;
+}
+#loginForm .form-control {
+  position: relative;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 0;
+}
 .modal {
   display: none;
   /* Hidden by default */
