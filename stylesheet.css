@@ -29,8 +29,8 @@ h3 {
 }
 
 .navbar{
-    background-color: #452531;
-    border-color: #452531;
+    background-color: #800020;
+    border-color: #800020;
     margin-top: 15px;
     
 }
@@ -41,6 +41,10 @@ li a {
     color: #eb83c1;
 }
 
+.shoplink {
+    color: #eb83c1;
+}
+
 .carousel-inner img {
   margin: auto;
   width: 50%;
@@ -48,7 +52,7 @@ li a {
 
 .imp {
     text-decoration: underline;
-    font-size: 150%;
+    line-height: 2;
 }
 
 #Fit1 {
@@ -94,6 +98,22 @@ p {
     width: 100%;
 }
 .dress-wide:hover {
+    opacity: 0.7;
+}
+.cb-left {
+    width: 43%;
+    padding: 5px;
+    float: left;
+}
+.cb-left:hover {
+   opacity: 0.7; 
+}
+.cb-wide {
+    width: 50%;
+    padding: 5px;
+    float: right;
+}
+.cb-wide:hover {
     opacity: 0.7;
 }
 .fpr-wide{
@@ -216,6 +236,8 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
+
+
 
 
 @media only screen and (max-width: 1000px) {
