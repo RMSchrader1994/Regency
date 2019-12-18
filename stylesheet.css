@@ -147,6 +147,11 @@ p {
     height: auto;
 }
 
+.item {
+    width: 75%;    
+    margin: 0 auto;
+}
+
 #myImg {
   border-radius: 5px;
   cursor: pointer;
